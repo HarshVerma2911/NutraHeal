@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+}
+
+/* navbar styles */
+/* for desktop mode */
+
+.navbar input[type='checkbox'],
+.navbar .hamburger-lines {
+    display: none;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+
+.navbar {
+    box-shadow: 0px 5px 10px 0px #aaa;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    color: #000;
+    opacity: 0.85;
+    z-index: 10;
+}
+
+.menu-items {
+    order: 2;
+    display: flex;
+}
+
+.menu-items li {
+    list-style: none;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.logo {
+    order: 1;
+    font-size: 3rem;
+}
+
+.navbar a {
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #117964;
+}
+
+/* Showcase area styles */
+
+.showcase-area {
+    height: 88vh;
+    background: linear-gradient(rgba(240, 240, 240, 0.144), rgba(255, 255, 255, 0.300)), url(/NutraHeal/img/header-bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.showcase-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+}
+
+.search {
+    padding: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border-style: none;
+    outline: 0;
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    min-width: 300px;
+}
+
+.fa-magnifying-glass {
+    position: absolute;
+    top: 22px;
+    right: 8px;
+    width: 18px;
+    color: #000;
+}
+
+/* Trending-news styles */
+
+.trending-wrapper {
+    display: flex;
+}
+
+.trending-food {
+    flex: 1 1 400px;
+    padding: 15px;
+    margin: 35px 0px;
+}
+
+.trending-food img {
+    display: block;
+    height: 600px;
+    width: 800px;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.trending-news {
+    flex: 1 1 400px;
+    padding: 15px;
+    margin: 35px 0px;
+}
